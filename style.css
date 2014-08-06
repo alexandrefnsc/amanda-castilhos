@@ -1,0 +1,525 @@
+/* INICIO * CSS Reset */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,
+fieldset,p,blockquote,th,td{margin:0;padding:0;}
+address,th{font-style:normal;font-weight:normal;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th{text-align:left;}
+img,fieldset{border:none;}
+ol,ul{list-style:none; font-size:inherit;}
+a{text-decoration:none;}
+div{
+	position:relative;
+}
+a:focus {outline: none;}
+/* FIM * CSS Reset */
+
+body{
+background: #fff;
+height: 100%;
+}
+
+html{
+	height: 100%;
+}
+
+/*------------- FONTES ------------------*/
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+@font-face{
+	src: url("fonts/Nilland-Bold.ttf");
+}
+
+@font-face{
+	src: url("fonts/Nilland.ttf");
+}
+
+@font-face{
+	src: url("fonts/Nilland-Black.ttf");
+}
+
+/*---------------------TUDO REFERENTE AO HEADER-------------*/
+header{
+	background: #fff;
+	padding: 10px;
+}
+
+#menu{
+	max-width: 800px;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	margin: auto;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+
+#menu ul{
+	padding: 20px 0px;
+	margin: auto;
+	width: 800px;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+#menu li{
+	display: inline;
+	float: left;
+	font-family: 'Gafata', sans-serif;
+	font-size: 16px;
+	margin: 0px 3%;
+}
+
+.icon{
+	width: 85px;
+	height: 85px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+}
+
+#menu a{
+	color: #7e7e7e;
+}
+
+#menu a:hover{
+	color:#ff8900;
+}
+
+/*---------------------TUDO REFERENTE AO FAUX MENU-------------*/
+
+#fauxMenu{
+	width: 100%;
+	height: 50px;
+	position: fixed; 
+	background-color: #fff;
+	padding-top: 8px;
+	display: none;
+	top: 0px;
+	z-index: 9999;
+}
+
+#menu02{
+	width: 580px;
+	margin: auto;
+}
+
+#menu02 img{
+	float: left;
+	padding: 0 10px;
+}
+
+#menu02 ul{
+	padding-top: 12px;
+}
+
+#menu02 li{
+	display: inline;
+	font-family: 'Gafata', sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+	padding: 10px 8px;
+}
+
+#menu02 a{
+	color: #f48120;
+}
+
+
+/*---------------------TUDO REFERENTE A DIV GERAL-------------*/
+
+.areas{
+	min-width: 1020px;
+	width: 100%;
+	margin: auto;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.circleDown{
+	border-radius: 50%;
+	width: 89px;
+	height: 89px;
+	margin: auto;
+	top: -42px;
+	cursor: pointer;
+	font-size: 15pt;
+}
+
+.mainContent{
+	width: 1020px;
+	min-height: 100%;
+	overflow: hidden;
+	margin: auto;
+}
+
+.textoArea{
+	font-family: "Nilland-Bold", sans-serif;
+	font-size: 38px;
+}
+
+.textoDescricao p{
+	font-family: "Nilland", sans-serif;
+	font-style: italic;
+	font-size: 16pt;
+	margin: auto;
+}
+
+/*---AREA 01---*/
+
+#area01{
+	text-align: center;
+	background: url(images/foto01.png) no-repeat center #f09c3c;
+}
+
+#textoScroll{
+	width: 1000px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#textoScroll h1{
+	font-family: BigNoodleTitling , sans-serif;
+	font-size: 100pt;
+	color: #fff;
+}
+
+#textoScroll h2{
+	font-family: 'Nilland', serif;
+	font-size: 37pt;
+	color: #fff;
+}
+
+.alvo01{
+	margin-top: 170px;
+}
+
+/*---AREA 02---*/
+#area02{
+	text-align: center;
+	background: url(images/fotoArea02.png) no-repeat right #fff;
+}
+
+#circle02{
+	color: #fff;
+	background: #ff8900;
+}
+
+#circle02 div{
+	top: 50px;
+}
+
+#areaSobre .icon{
+	margin-top: -30px;
+}
+
+#areaSobre h1{
+	color: #7e7e7e;
+}
+
+#areaSobre .textoDescricao{
+	color: #ff8900;
+}
+
+#about{
+	width: 500px;
+	height: 253px;
+	overflow: hidden;
+	text-align: left;
+	margin: 40px 40px;
+}
+
+#sobre01{
+	color: #ff8900;
+}
+
+/*---AREA 03---*/
+#area03{
+	text-align: center;
+	background: url(images/fotoArea03.png) no-repeat top center #545454;
+}
+
+#circle03{
+	color: #ff8900;
+	background: #fff;
+}
+
+#circle03 div{
+	top: 50px;
+}
+
+#areaSolucoes{
+	width:1020px;
+	margin: auto;
+}
+
+#areaSolucoes h1{
+	color: #fff;
+}
+
+#solucoes01{
+	color: #fff;
+}
+
+#areaSolucoes ul{
+	padding-top: 15px;
+}
+
+#areaSolucoes li{
+	display: inline;
+	float: left;
+	margin: 25px 38px;
+}
+
+.solucoes_content{
+	width: 239px;
+	background: #fff;
+	padding: 12px;
+}
+
+.solucoes_content h3{
+	font-family: "Nilland-Black", sans-serif;
+	text-transform:uppercase;
+	background: #ff8900;
+	padding: 5px;
+	color: #fff;
+}
+
+.solucoes_content p{
+	margin: 46px 0px;
+}
+
+.solucoes_content #btn_solucoes{
+	width: 149px;
+	height: 42px;
+	font-size: 14px;
+	font-family: "Nilland-Black", sans-serif;
+	cursor: pointer;
+}
+
+/*---AREA 04---*/
+#area04{
+	text-align: center;
+	background: url(images/fotoArea04.png) no-repeat top right #ff8900;
+}
+
+#circle04{
+	color: #fff;
+	background: #545454;
+}
+
+#circle04 div{
+	top: 50px;
+}
+
+#areaBeneficios{
+	width:1020px;
+	margin: auto;
+}
+
+#areaBeneficios h1{
+	color: #fff;
+}
+
+#beneficios01{
+	color: #fff;
+}
+
+#content_beneficios{
+	min-height: 100%;
+	overflow: hidden;
+	margin: 20px 0px 80px 0px;
+	width: 1024px;
+}
+
+.elemenst_beneficios h3{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	margin-top: 5px;
+}
+
+.elemenst_beneficios p{
+	color: #ff5f00;
+	font-size: 20px;
+}
+
+.icon_beneficios{
+	border-radius: 50%;
+	width: 200px;
+	padding: 25px;
+	background: #fff;
+	margin: auto;
+}
+
+#controleBeneficios{
+	width: 128px;
+	margin: auto;
+	font-size: 50pt;
+}
+
+#controleBeneficios li{
+	float: left;
+	padding: 0px 20px;
+	color: #fff;
+}
+
+/*---AREA 05---*/
+#area05{
+	text-align: center;
+	background: url(images/fotoArea05.png) no-repeat top #ce3000;
+}
+
+#circle05{
+	color: #fff;
+	background: #ff8900;
+}
+
+#circle05 div{
+	top: 50px;
+}
+
+#areaClientes{
+	width:1020px;
+	margin: auto;
+}
+
+#areaClientes h1{
+	color: #fff;
+}
+
+#clientes01{
+	color: #fff;
+}
+
+.content_clientes{
+	width: 720px;
+	height: 440px;
+	top: 20px;
+	margin: auto;
+	margin-bottom: 80px;
+	padding: 20px;
+	background: #ce3000;
+	box-shadow: 0px 0px 50px #a12500;
+	text-align: left;
+}
+
+.logoClientes{
+	width: 127px;
+	height: 47px;
+	background: #fff;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.content_clientes p{
+	clear: both;
+	color: #fff;
+	font-style: italic;
+}
+
+.content_clientes ul{
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	margin-top: 50px;
+}
+
+.content_clientes li{
+	padding: 2px 0px;
+}
+
+/*---AREA 06---*/
+#area06{
+	text-align: center;
+	background: url(images/fotoArea06.png) no-repeat top #fff;
+}
+
+#circle06{
+	color: #fff;
+	background: #ce3000;
+}
+
+#circle06 div{
+	top: 50px;
+}
+
+#areaContato{
+	width:1020px;
+	margin: auto;
+	margin-bottom: 50px;
+	color: #fff;
+}
+
+#areaContato h1{
+	color: #282828;
+}
+
+#areaContato ul{
+	width: 520px;
+	height: 50px;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#areaContato li{
+	float: left;
+	padding: 0px 40px;
+}
+
+#contatoFormulario{
+	clear: both;
+	margin-top: 25px;
+}
+
+#contatoFormulario input{
+	width: 745px;
+	padding: 10px;
+	font-family: 'Nilland', serif;
+	font-size: 15px;
+	margin: 5px 0px;
+}
+
+#contatoFormulario textarea{
+	clear: both;
+	width: 745px;
+	height: 224px;
+	padding: 10px;
+	margin-top: 5px;
+	font-family: 'Nilland', serif;
+	font-size: 15px;
+}
+
+#btn_contato{
+	width: 182px;
+	height: 55px;
+	margin-top: 20px;
+	background: #ce3000;
+	font-family: 'Nilland', serif;
+	font-size: 15px;
+	color: #fff;
+}
+
+/*------------------- FOOTER ----------------------------*/
+footer{
+	background: #e74c3c;
+}
+
+#areaRodape{
+	width: 1020px;
+	margin: auto;
+	padding: 10px 0px;
+}
+
+/*------------------ TIPOGRAFIA ------------------------*/
+p{
+	font-family: "Nilland", sans-serif;
+	font-size: 18px;
+	margin-bottom: 12px;
+	color: #666;
+}
